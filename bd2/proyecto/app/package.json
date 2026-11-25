@@ -1,0 +1,20 @@
+{
+  "name": "tienda-ropa-app",
+  "version": "1.0.0",
+  "description": "Aplicacion web de la Tienda de Ropa (Proyecto Final Bases de Datos 2). Monolito Node.js/Express con PostgreSQL y MongoDB.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed:mongo": "node seed/seed_mongo.js"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^4.22.3",
+    "express-session": "^1.19.0",
+    "mongodb": "^7.8.0",
+    "multer": "^2.5.0",
+    "pg": "^8.23.1"
+  }
+}

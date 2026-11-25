@@ -1,0 +1,15 @@
+[Unit]
+Description=Tienda de Ropa (Node.js)
+After=network.target postgresql.service mongod.service
+
+[Service]
+Type=simple
+User=tienda
+WorkingDirectory=/home/tienda/tienda-ropa/app
+EnvironmentFile=/etc/tienda-ropa.env
+ExecStart=/usr/bin/node src/server.js
+Restart=on-failure
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

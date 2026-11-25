@@ -30,63 +30,54 @@ export const education = [
     achievements: [
       "App Development with Java",
       "Web Development with Java and Springboot",
+      "Bases de Datos 2: SQL avanzado, PL/SQL sobre Oracle, MongoDB y proyecto integrador con PostgreSQL + MongoDB (2026-2)",
     ],
   },
 ];
 export const skills = {
-  programmingLanguages: [
-    "C++",
-    "JAVA",
-    "Python",
-  ],
-  frontendDevelopment: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "JSF",
-  ],
-  backendDevelopment: [
-    "JAVA",
-     "Python",
-    ],
-  databaseAndStorage: [
-    "Oracle",
-    "Azure"
-  ],
-  toolsAndServices: [
-    "Eclipse",
-    "Netbeans",
-    "Intellij",
-  ],
+  programmingLanguages: ["C++", "JAVA", "Python", "SQL", "PL/SQL"],
+  frontendDevelopment: ["HTML", "CSS", "JavaScript", "JSF"],
+  backendDevelopment: ["JAVA", "Python", "Springboot"],
+  databaseAndStorage: ["Oracle", "SQL Developer", "PL/SQL", "MongoDB"],
+  cloudAndDevOps: ["Azure", "Git", "GitHub Actions"],
+  toolsAndServices: ["Eclipse", "Netbeans", "Intellij"],
 };
 
 export const evidence = [
   {
-    title: "SQL ",
-    github: "https://github.com/",
+    title: "SQL avanzado",
+    github: "https://github.com/LemusDc/LemusDc.github.io/tree/main/bd2/sql",
     description: [
-      "Coming soon...",
+      "JOIN: inner, left, full, cross, natural, using, self y antijoin",
+      "Vistas, CASE, NVL / DECODE / COALESCE",
+      "Ejercicios sobre el esquema HR de Oracle",
     ],
   },
   {
-    title: "PL/SQL Scripts",
-    github: "https://github.com/",
+    title: "PL/SQL",
+    github: "https://github.com/LemusDc/LemusDc.github.io/tree/main/bd2/plsql",
     description: [
-      "Coming soon...",
+      "Bloques anónimos, %TYPE y %ROWTYPE",
+      "Funciones almacenadas",
+      "Cursores explícitos parametrizados",
     ],
   },
   {
-    title: "NoSQL",
-    github: "https://github.com/",
+    title: "NoSQL (MongoDB)",
+    github: "https://github.com/LemusDc/LemusDc.github.io/tree/main/bd2/nosql",
     description: [
-      "Coming soon...",
+      "Taller MQL: consultas, agregaciones y $lookup",
+      "Índice ESR con explain(): de COLLSCAN a IXSCAN",
+      "Modelado con patrones de diseño",
     ],
   },
   {
-    title: "Proyecto",
-    github: "https://github.com/",
+    title: "Proyecto: Tienda de Ropa",
+    github: "https://github.com/LemusDc/LemusDc.github.io/tree/main/bd2/proyecto",
     description: [
-      "Coming soon...",
+      "PostgreSQL + MongoDB + Node.js",
+      "21 tablas, 11 triggers, 12 procedimientos y 16 reportes",
+      "Documentación completa y video de sustentación",
     ],
   },
 ];

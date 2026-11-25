@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda de Ropa - Sistema de gestión</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <section id="pantalla-login" class="login" hidden>
+    <form id="form-login" class="tarjeta login-caja" autocomplete="off">
+      <h1>Tienda de Ropa</h1>
+      <p class="sub">Sistema de gestión de ventas, inventario y clientes</p>
+      <label>Usuario <input name="username" required maxlength="40" autofocus></label>
+      <label>Contraseña <input name="password" type="password" required maxlength="100"></label>
+      <button type="submit" class="primario">Ingresar</button>
+      <p id="login-error" class="error" role="alert"></p>
+      <details class="ayuda"><summary>Usuarios de demostración</summary>
+        <p>admin / Admin2026* &middot; vendedor1 / Vende2026* &middot; analista / Analista2026*</p></details>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <header class="barra">
+      <strong class="marca">Tienda de Ropa</strong>
+      <nav id="menu" aria-label="Secciones"></nav>
+      <span class="usuario"><span id="usuario-info"></span> <button id="btn-evidencia" type="button">Evidencia</button> <button id="btn-salir" type="button">Salir</button></span>
+    </header>
+    <main id="contenido" tabindex="-1"></main>
+    <aside id="panel-evidencia" class="evidencia" hidden aria-label="Registro de llamadas a las bases de datos">
+      <div class="evidencia-barra">
+        <strong>Evidencia: llamadas a PostgreSQL y MongoDB</strong>
+        <label><input type="checkbox" id="ev-todo"> incluir SELECT</label>
+        <button type="button" id="ev-limpiar">Limpiar</button>
+        <button type="button" id="ev-cerrar">Cerrar</button>
+      </div>
+      <div id="ev-lista" class="evidencia-lista"></div>
+    </aside>
+  </div>
+
+  <div id="avisos" class="avisos" aria-live="polite"></div>
+  <dialog id="dlg"><div id="dlg-contenido"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>

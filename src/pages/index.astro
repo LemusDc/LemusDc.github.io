@@ -6,6 +6,10 @@ import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import EvidenceSection from "@/components/EvidenceSection";
 import EducationSection from "@/components/EducationSection";
+import CourseSection from "@/components/CourseSection";
+import ActivitiesSection from "@/components/ActivitiesSection";
+import ProjectSection from "@/components/ProjectSection";
+import NotesSection from "@/components/NotesSection";
 import Footer from "@/components/Footer";
 ---
 
@@ -13,10 +17,14 @@ import Footer from "@/components/Footer";
   <GlassHeader client:only="react" />
   <main class="min-h-screen">
     <HeroSection client:only="react" />
+    <CourseSection client:only="react" />
+    <ActivitiesSection client:only="react" />
+    <NotesSection client:only="react" />
+    <ProjectSection client:only="react" />
+    <EvidenceSection client:only="react" />
+    <SkillsSection client:only="react" />
     <EducationSection client:only="react" />
     <ExperienceSection client:only="react" />
-    <SkillsSection client:only="react" />
-    <EvidenceSection client:only="react" />
   </main>
   <Footer client:only="react" />
 </Layout>
